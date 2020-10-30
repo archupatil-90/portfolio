@@ -1,342 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-   
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
 
     <style>
-        body{
+        body {
             margin: 0;
         }
-        .mainbox{
-            width:90%;
-           height:600px;
-            margin:auto;
-            background-color:white;
-            box-shadow: 0px 0px 15px grey;
-            
+
+        .mainbox {
+            width: 90%;
+            height: 600px;
+            margin: auto;
+            background-color: white;
+            /* box-shadow: 0px 0px 15px grey; */
+
+
         }
-       .leftcontainer{
-        width: 30%;
-    height: 100vh;
-    background-color: #f2f3f7;
-    padding-top: 30px;
-    text-align: center;
-    background-attachment: fixed;
-    position: fixed;
-    float: left;
+
+        .leftcontainer {
+            width: 30%;
+            height: 100vh;
+            background-color: #f2f3f7;
+            padding-top: 30px;
+            text-align: center;
+            background-attachment: fixed;
+            position: fixed;
+            float: left;
         }
-       .leftcontainer .cardwrapper{
+
+        .leftcontainer .cardwrapper {
             width: 120px;
-            height:120px;
+            height: 120px;
             border-radius: 60px;
             background-image: url(20171210_134505.jpg);
             background-size: cover;
             margin: auto;
-           
+
         }
-   
-       .leftcontainer  ul  {
-          list-style: none;
+
+        .leftcontainer ul {
+            list-style: none;
         }
-       .leftcontainer ul li{
-            height:50px;
+
+        .leftcontainer ul li {
+            height: 50px;
+            font-size: 15px;
         }
-       .leftcontainer ul li a{
+
+        /* .leftcontainer ul li:visited{
+    color:blue;
+} */
+
+        .leftcontainer ul li a {
             text-decoration: none;
-            color:black;
+            color: black;
             letter-spacing: .3px;
             font-weight: normal;
-
-        }
-       
-       .leftcontainerul ul li a:hover{
-            text-decoration: underline blue;
             transition: 2s;
+
         }
 
-        
+        .leftcontainer ul li a:hover {
+            text-decoration: underline blue;
 
-         .rightcontainer{
-             width:70%;
-             /* height: 800px; */
-             margin: 0;
-             float: left;
-             margin-left: 30%;
-             
-         }
-         .rightcontainer .img{
+        }
+
+
+
+        .rightcontainer {
+            width: 70%;
+            /* height: 100vh; */
+            margin: 0;
+            float: left;
+            margin-left: 30%;
+
+
+        }
+
+        .rightcontainer .img {
             width: 85%;
-    height: 100vh;
-    background-image: url(IMG_20140627_122452.jpg);
-    background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-    margin-left: 40px;
-                       
-         }
-        .rightcontainer h1{
-             padding-top: 20%;
-             text-align: left;
-             color: white;
-             font-size: 60px;
-             font-weight: 600;
-             line-height: 1.3;
-             font-family:"Quicksand, Arial, sans-serif" ;
-         }
-          .rightcontainer .btn{
-             width:200px;
-             height:50px;
-             text-align: center;
-             font-size: 15px;
+            height: 100vh;
+            background-image: url(IMG_20140627_122452.jpg);
+            background-size: cover;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 1%;
+            margin-left: 40px;
 
-         }
-         .rightcontainer .aboutme{
-           
-             width:84%;
-             height: 100vh;
-             margin: auto;
-             padding: 3% 5% 0% 0%;
-            
-            
-  
-   
-}
+        }
 
+        .rightcontainer h1 {
+            padding-top: 20%;
+            text-align: left;
+            color: white;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 1.3;
+            font-family: "Quicksand, Arial, sans-serif";
+        }
 
+        .rightcontainer .btn {
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            font-size: 15px;
 
-h2{
-    
-    text-transform: uppercase;
-    color: #999999;
-    font-weight: 600;
-    letter-spacing: .5px;
-    font-family:"Quicksand, Arial, sans-serif";
-    
-}
- .rightcontainer .aboutme p{
-    padding-top: 2%;
-    text-align: left;
-    letter-spacing: .2px;
-    color: #999999;
-    line-height: 1.5;
-    font-size: 20px;
-   
- }
- .rightcontainer .skills{
-    width: 84%;
-    height: 100vh;
-    margin: auto;
-    padding: 3% 5% 0% 0%;
-    
-}
-h3{
-    font-size: 20px;
-    font-family: "Quicksand", Arial, sans-serif;
-    margin-bottom: 10px;
-    
-}
-.progress{
-    height: 20px;
-    width:100%;
- margin: auto;
-  background-color: gray; 
-  border-radius: 10px;
-    
-   
-}
-.progress .progressbar1{
-    width: 75%;
-    height: 20px;
-    border-radius: 10px;
-    background-color: blue;
-}
-.progress .progressbar2{
-    width: 85%;
-    height: 20px;
-    background:#f9bf3f;
-    border-radius: 10px;
+        }
 
-}
-.progress .progressbar3{
-    width: 85%;
-    height: 20px;
-    background:#a84cb8;
-    border-radius: 10px;
+        .rightcontainer .aboutme {
 
-}
-.progress .progressbar4{
-    width: 75%;
-    height: 20px;
-    background:#ec5453;
-    border-radius: 10px;
-
-}
-.progress .progressbar5{
-    width: 70%;
-    height: 20px;
-    background:#2fa499;
-   border-radius: 10px; 
-
-}
+            width: 84%;
+            height: 100vh;
+            margin: auto;
+            padding: 3% 5% 0% 5%;
 
 
 
 
-
-.rightcontainer .education{
-    width:95%;
-    height: 100vh;
-                 margin: auto;
-                 padding: 3% 5% 0% 0%;
-            
-    
-
-}
-.rightcontainer .education .contentbox{
-    width:100%;
-    height:130px;
-    margin: auto;
-    background-color: #f2f3f7;
-    border: 1px solid #e6e6e6 ;
-    color: #333333;
-    text-transform: uppercase;
-    padding-left: 3%;
-    margin-bottom: 20px;
-    text-align: center;
-}
+        }
 
 
- .rightcontainer .work{
-             width:95%;
-             height: 100vh;
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #999999;
+            font-weight: 600;
+            letter-spacing: .5px;
+            font-family: "Quicksand, Arial, sans-serif";
+            font-size: 30px;
+
+        }
+
+        .rightcontainer .aboutme p {
+            padding-top: 2%;
+            text-align: left;
+            letter-spacing: .2px;
+            color: #999999;
+            line-height: 1.5;
+            font-size: 20px;
+
+        }
+
+        .rightcontainer .skills {
+            /* width: 84%; */
+            height: 100vh;
+            margin: auto;
+            position: absolute;
+            padding: 3% 5% 0% 5%;
+
+        }
+
+        .rightcontainer .skills .card {
+            width: 80%;
+            margin: auto;
+            padding-left: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: "Quicksand", Arial, sans-serif;
+            margin-bottom: 10px;
+
+        }
+
+        .progress {
+            height: 20px;
+            width: 100%;
+            margin: auto;
+            background-color: gray;
+            border-radius: 10px;
+
+
+        }
+
+
+        .progress .progressbar1 {
+            width: 75%;
+            height: 20px;
+            border-radius: 10px;
+            background-color: blue;
+        }
+
+        .progress .progressbar1 span {
+            position: absolute;
+            right: 277px;
+            top: 115px;
+        }
+
+        .progress .progressbar2 {
+            width: 85%;
+            height: 20px;
+            background: #f9bf3f;
+            border-radius: 10px;
+
+        }
+
+        .progress .progressbar2 span {
+            position: absolute;
+            right: 214px;
+            top: 186px;
+        }
+
+        .progress .progressbar3 {
+            width: 85%;
+            height: 20px;
+            background: #a84cb8;
+            border-radius: 10px;
+
+        }
+
+        .progress .progressbar3 span {
+            position: absolute;
+            right: 214px;
+            top: 260px;
+        }
+
+        .progress .progressbar4 {
+            width: 75%;
+            height: 20px;
+            background: #ec5453;
+            border-radius: 10px;
+
+        }
+
+        .progress .progressbar4 span {
+            position: absolute;
+            right: 277px;
+            top: 335px;
+        }
+
+        .progress .progressbar5 {
+            width: 70%;
+            height: 20px;
+            background: #2fa499;
+            border-radius: 10px;
+
+        }
+
+        .progress .progressbar5 span {
+            position: absolute;
+            right: 307px;
+            top: 412px;
+        }
+
+
+
+
+        .rightcontainer .education {
+            width: 95%;
+            height: 100vh;
+            margin: auto;
+            padding: 3% 5% 0% 2%;
+            margin-top: 23%;
+
+
+        }
+
+        .rightcontainer .education .contentbox {
+            width: 100%;
+            height: 130px;
+            margin: auto;
+            background-color: #f2f3f7;
+            border: 1px solid #e6e6e6;
+            color: #333333;
+            text-transform: uppercase;
+            padding-left: 3%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+
+        .rightcontainer .work {
+            width: 95%;
+            height: 100vh;
             margin-bottom: 5%;
-             margin: auto;
-             padding: 3% 5% 0% 0%;
-            
-            
-    
-}
- .rightcontainer .work .cardwrap{
-    width:100%;
-   margin-bottom: 5%;
-    /* margin-left: 20px;
-    margin-right: 10px; */
-    float: left;
-
-}
- .rightcontainer .work .cardwrap .img1{
-    width: 274px;
-    height: 230px;
-    margin-left: 5px;
-    margin-right: 5px;
-
-}
- .rightcontainer .work .cardwrap .img2{
-    width: 413px;
-    height: 230px;
-    margin-left: 5px;
-    margin-right: 10px;
-    margin-top: 30px;
-}
-
- .rightcontainer .contact{
-             width:95%;
-             height: 100vh;
-             margin: auto;
-             padding: 3% 5% 0% 0%;
-            
-    
-}
-.mainbox .rightcontainer .contact .leftbox{
-    width:53%;
-    height:100vh;
-    
-         float: left;
-
-
-}
-.mainbox .rightcontainer .contact .leftbox .cardbox{
-    width:100%;
-    height:100px;
-   margin-bottom: 20px;
-    
-
-}
- .rightcontainer .contact .leftbox .boximg{
-
-width:100px;
-height: 100px;
-float: left;
-}
- .rightcontainer .contact .leftbox .boximg .img1{
-    width: 50px;
-    height: 57px;
-    padding-left: 23px;
-   
-    padding: 25px;
-   
-}
-
-
- .rightcontainer .contact .leftbox .text{
-    width:60%;
-   padding-top: 20px;
-    float: left;
-    
-    
-}
- .rightcontainer .contact .leftbox .text a{
-    text-decoration: none;
-    color:#2c98f0;
-}
-
-.rightcontainer .contact .rightbox{
-    width:42%;
-    height:100%;
-    margin-left: 5%;
-    float:left;
-
-
-}
-
- .rightcontainer .contact .rightbox .text{
-    height: 54px;
-    margin: auto;
-    width: 97%;
-    background-color: #f2f3f7;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    border: none;
-}
-.text1{
-    height: 120px;
-    width: 97%;
-    background-color: #f2f3f7;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    border: none;
-}
-
-.rightcontainer .contact .rightbox .btn{
-    background: #2c98f0;
-    color: #fff;
-    border: 2px solid #2c98f0;
-    border-radius: 5px;
-}
+            margin: auto;
+            padding: 3% 5% 0% 2%;
 
 
 
+        }
 
-         
+        .rightcontainer .work .cardwrap {
+            width: 100%;
+            margin-bottom: 5%;
+            /* margin-left: 20px;
+margin-right: 10px; */
+            float: left;
+
+        }
+
+        .rightcontainer .work .cardwrap a {
+            text-decoration: none;
+        }
+
+        .rightcontainer .work .cardwrap .img2 {
+            width: 413px;
+            height: 230px;
+            margin-left: 120px;
+            margin-right: 100px;
+            margin-top: 30px;
+        }
+
+
+        .rightcontainer .contact {
+            width: 95%;
+            height: 100vh;
+            margin: auto;
+            padding: 3% 5% 0% 2%;
+
+
+        }
+
+        .mainbox .rightcontainer .contact .leftbox {
+            width: 53%;
+            height: 100vh;
+
+            float: left;
+
+
+        }
+
+        .mainbox .rightcontainer .contact .leftbox .cardbox {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+
+
+        }
+
+        .rightcontainer .contact .leftbox .boximg {
+            width: 100px;
+            height: 70px;
+            float: left;
+            background-color: #f2f3f7;
+            padding-top: 20px;
+        }
+
+        .rightcontainer .contact .leftbox .boximg .img1 {
+            width: 50px;
+            height: 57px;
+            padding-left: 23px;
+
+            padding: 25px;
+
+        }
+
+
+        .rightcontainer .contact .leftbox .text {
+            width: 60%;
+            padding-top: 20px;
+            float: left;
+            padding-left: 15px;
+
+
+        }
+
+        .rightcontainer .contact .leftbox .text a {
+            text-decoration: none;
+            color: #2c98f0;
+        }
+
+        .rightcontainer .contact .rightbox {
+            width: 42%;
+            height: 100%;
+            margin-left: 5%;
+            float: left;
+
+
+        }
+
+        .rightcontainer .contact .rightbox .text {
+            height: 54px;
+            margin: auto;
+            width: 97%;
+            background-color: #f2f3f7;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border: none;
+        }
+
+        .text1 {
+            height: 120px;
+            width: 97%;
+            background-color: #f2f3f7;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border: none;
+        }
+
+        .rightcontainer .contact .rightbox .btn {
+            background: #2c98f0;
+            color: #fff;
+            border: 2px solid #2c98f0;
+            border-radius: 5px;
+        }
     </style>
 
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="home" class="mainbox">
         <div class="leftcontainer">
@@ -349,12 +421,12 @@ float: left;
                 <li><a href="#education">EDUCATION </a></li>
                 <li><a href="#work">WORK</a></li>
                 <li><a href="#contact">CONTACT </a></li>
-               
+
             </ul>
 
-       
-    </div>
-        
+
+        </div>
+
         <div class="rightcontainer">
             <div class="img">
                 <h1>
@@ -362,162 +434,167 @@ float: left;
                 </h1>
                 <button class="btn">Contact Me</button>
             </div>
-           
 
-        
-       
-  
-<div id="aboutme" class="aboutme">
-    <h2>About Me</h2>
-    <p>
-        <b>Hi I am Archana Patil</b> from Vadodara.I am a hardworking and pationate software engineer.<br>
-        <br>
-        I had completed my bachelors in IT from Pune University,am having academic experience as 
-        computer teacher I have done one interndhip program 
-        to inhance my practical knowledge as front end developer 
-        in which I work on two commercial website templates .<br>
-        <br>
-        Interested in frontend spectrum and working on ambicious projects with positive people.
 
-    
-    </p>
-</div>
-<div id="skill" class="skills">
-    <h2>My skills</h2>
-    <div>
-        <h3>Photoshop</h3>
-        <div class="progress">
-            <div class="progressbar1 ">
-                  
-        </div>
 
-    </div>
-    <div>
-        <h3>HTML5</h3>
-        <div class="progress">
-            <div class="progressbar2 ">
-               
+
+
+            <div id="aboutme" class="aboutme">
+                <h2>About Me</h2>
+                <p>
+                    <b>Hi I am Archana Patil</b> from Vadodara.I am a hardworking and pationate software engineer.<br>
+                    <br>
+                    I had completed my bachelors in IT from Pune University,am having academic experience as
+                    computer teacher I have done one interndhip program
+                    to inhance my practical knowledge as front end developer
+                    in which I work on two commercial website templates .<br>
+                    <br>
+                    Interested in frontend spectrum and working on ambicious projects with positive people.
+
+
+                </p>
             </div>
-        </div>
+            <div id="skill" class="skills">
+                <h2>My skills</h2>
+                <div class="card">
+                    <h3>Photoshop</h3>
+                    <div class="progress">
+                        <div class="progressbar1 ">
+                            <span>75%</span>
+                        </div>
 
-    </div>
-   
-    <div>
-        <h3>CSS3</h3>
-        <div class="progress">
-            <div class="progressbar3 ">
-                
+                    </div>
+                    <div>
+                        <h3>HTML5</h3>
+                        <div class="progress">
+                            <div class="progressbar2 ">
+                                <span>85%</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h3>CSS3</h3>
+                        <div class="progress">
+                            <div class="progressbar3 ">
+                                <span>85%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h3>Jquery</h3>
+                        <div class="progress">
+                            <div class="progressbar4 ">
+                                <span>75%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h3>c#</h3>
+                        <div class="progress">
+                            <div class="progressbar5 ">
+                                <span>70%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="education" class="education">
+                    <h2>Education</h2>
+                    <div class="contentbox">
+                        <p> 2016</p>
+                        <h3>bachelors in information technology</h3>
+                        <p>Met Bhujbal Knowledge city</p>
+                    </div>
+                    <div class="contentbox">
+                        <p>2009</p>
+                        <h3>diploma in computer technology</h3>
+                        <p>govt.Plytechnic Nashik</p>
+
+                    </div>
+                    <div class="contentbox">
+                        <p>2006</p>
+                        <h3>high school secondary education</h3>
+                        <p>S.S.M.V.P</p>
+                    </div>
+
+                </div>
+                <div id="work" class="work">
+                    <h2>my work</h2>
+                    <div class="cardwrap">
+
+                        <a href="https://archupatil-90.github.io/vegantemplate/">
+                            <img src="vegan.png" class="img2"></a>
+
+                        <a href="https://archupatil-90.github.io/template1/">
+                            <img src="cafe.png" class="img2"></a>
+                    </div>
+
+
+                </div>
+                <div id="contact" class="contact">
+                    <h2>contact me</h2>
+                    <div class="leftbox">
+                        <div class="cardbox">
+                            <div class="boximg">
+                                <span class="img1"><i class="fas fa-envelope-open-text fa-4x"
+                                        style=color:#2c98f1></i></span>
+
+                            </div>
+                            <div class="text">
+                                <p>
+                                    <a href="#">archuchaudhari90@gmail.com</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="cardbox">
+                            <div class="boximg">
+                                <span class="img1"> <i class="far fa-map fa-4x" style=color:#2c98f1></i></span>
+
+                            </div>
+                            <div class="text">
+                                <p>
+                                <address>b-67,aadhar society,waghodia road,vadodara 390019</address>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="cardbox">
+                            <div class="boximg">
+                                <span class="img1"> <i class="fas fa-phone-alt fa-4x" style=color:#2c98f1></i></span>
+
+                            </div>
+                            <div class="text">
+                                <p>
+                                    <a href="#">+917574807450</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="rightbox">
+                        <input type="text" class="text" placeholder="Name">
+                        <input type="text" class="text" placeholder="Email">
+                        <input type="text" class="text" placeholder="Subject">
+                        <input type="text" class="text1" placeholder="Message">
+
+                        <button class="btn">send message</button>
+
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
-        
-    </div>
-    <div>
-        <h3>Jquery</h3>
-        <div class="progress">
-            <div class="progressbar4 ">
-               
-            </div>
-        </div>
-        
-    </div>
-    <div>
-        <h3>c#</h3>
-        <div class="progress">
-            <div class="progressbar5 ">
-               
-            </div>
-        </div>
-        
-    </div>
-</div>
-<div id="education" class="education">
-    <h2>Education</h2>
-    <div class="contentbox">
-    <p> 2016</p>
-        <h3>bachelors in information technology</h3>
-        <p>Met Bhujbal Knowledge city</p>
-    </div>
-    <div class="contentbox">
-        <p>2009</p>
-       <h3>diploma in computer technology</h3>
-       <p>govt.Plytechnic Nashik</p>
-      
-    </div>
-    <div class="contentbox">
-        <p>2006</p>
-        <h3>high school secondary education</h3>
-        <p>S.S.M.V.P</p>
-    </div>
 
-</div>
-<div  id="work"class="work">
-    <h2>my work</h2>
-    <div class="cardwrap">
-        <!-- <img src="loginp.png" class="img1">
-  
-    
-        <img src="loginp2.png" class="img1">
-        
-        <img src="car.png" class="img1"> -->
-        
-        <img src="vegan.png" class="img2">
-        
-      <img src="cafe.png" class="img2">
-    </div>
-    
 
-</div>
-<div  id="contact"class="contact">
-    <h2>contact me</h2>
-    <div class="leftbox">
-        <div class="cardbox">
-            <div class="boximg"> 
-                <img src="email.png" class=img1>
-            </div>
-              <div class="text" >
-                  <p>
-                      <a href="#" >archuchaudhari90@gmail.com</a>
-                  </p> </div> 
-            
-        </div>
-        <div class="cardbox">
-            <div class="boximg"> 
-              <img src="address.png" class="img1">
-            </div>
-              <div class="text" >
-                  <p>
-                     <address>b-67,aadhar society,waghodia road,vadodara 390019</address>
-                  </p> </div> 
-            
-        </div>
-        <div class="cardbox">
-            <div class="boximg"> 
-                <img src="phone.png" class=img1>
-            </div>
-              <div class="text" >
-                  <p>
-                      <a href="#">+917574807450</a>
-                  </p> </div> 
-            
-        </div>
-    </div>
-    <div class="rightbox">
-        <input type="text"  class="text" placeholder="Name">
-        <input type="text"  class="text" placeholder="Email">
-        <input type="text"  class="text" placeholder="Subject">  
-        <input type="text"  class="text1" placeholder="Message" >
 
-        <button class="btn">send message</button>
-
-    </div>
-
-</div>
-
-</div>
-    
-</div>
-
-   
-    
 </body>
+
 </html>
